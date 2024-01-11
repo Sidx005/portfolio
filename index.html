@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ff4bab919.js" crossorigin="anonymous"></script>
+
+    <title>Portfolio</title>
+    <style>
+        header{
+            position: fixed;
+            top: 0;
+            right: 0;
+           width: 100%;
+           background: #000;
+           color: white;
+           z-index: 100;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 20px 120px;
+
+
+        }
+       nav a{
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+
+    }
+    nav a:hover{
+        color: aqua;
+    }
+       .Logo{
+        color: white;
+        font-size: 30px;
+        letter-spacing: 7px;
+        font-weight: bold ;
+        text-decoration: none;
+       }
+       #Mode{
+
+       margin-left: 15px;
+       width: 20px;
+       height: 20px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 50%;
+       padding: 5px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container" >
+      <header>
+        <a href="" class="Logo" style="text-shadow: 0.055em 0.025em 0 red,0.055em 0.025em 0 blue,0.055em 0.025em 0 pink;">SID.</a>
+        <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#project">PROJECT</a>
+        <a href="#contact">CONTACT</a>
+        </nav>    
+           <button type="button" id="Mode" onclick=changecolor()><i class="fas fa-moon"></i></button>
+
+      </header>  
+     <section id="home">
+        <div class="intro">
+            <h1>Hello!! <br>Welcome to my portfolio website</h1>
+        
+        
+        </div>
+        <div class="photo">
+            
+        </div>
+     </section>   
+     <section id="about" style="display: block; padding: 50px 120px;">
+        <div class="description" style="min-height: 50%;max-width: 50%;background-color: transparent ;padding: 20px;">
+          <h1 style="text-align: center; color: white;">About Me</h1>
+
+      <p ><b>My name is Siddharth Prabudesai.I'm an aspiring software engineer.I'm enthusiastic to learn about various new technologies <br>
+    and the latest on-going trends in the industry.I'm currently pursuing my BE in Information Technology in Thakur College of Engineering and Technology</b></p>
+        </div>
+     </section>   
+     <section id="project" style="display: block;padding: 30px;">
+      <h1 style="font-size: 40px; margin-top: 0;text-align: center;color: black;" id="projHead" >PROJECTS</h1>
+      <div class="img-contain" style="display:flex;gap: 55px;;justify-content: space-between;align-items: center;margin-top: 20px;">
+         
+       <div class="container1">
+        <div class="card" style="background-color: #fff;">
+          <div class="front" style="display: flex;justify-content: center;align-items: center;">
+          </div>
+          <div class="back"  style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+             <p style="text-align: center;">Bhuvan is a web-based utility that allows users to explore geographic content
+              prepared by the Indian Space Research Organization (ISRO).</p>
+             <button style="background-color: blue;border: none;border-radius: 5px;"><a href="https://siddharth-1301.github.io/Bhuvan3/">Click Me</a></button>
+          </div>
+      </div>
+       </div>
+       <div class="container1">
+        <div class="card" style="background-color: azure;">
+          <div class="front" style="display: flex;justify-content: center;align-items: center;background-image: url('Weather.png');">
+            
+          </div>
+          <div class="back"  style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            <p style="text-align: center;">Weather app displays the weather of cities in real-time, after searching the name of the city in the search-box</p>
+            <button style="background-color: blue;border: none;border-radius: 5px;"><a href="https://siddharth-1301.github.io/WeatherAPp/" >Click Me</a></button>
+          </div>
+        </div>
+        </div>
+        <div class="container1">
+          <div class="card" style="background-color: azure;">
+          <div class="front" style="background-image: url('TIC-Tac.png');display: flex;justify-content: center;align-items: center;">
+            
+          </div>
+          <div class="back"  style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            <p style="text-align: center;">Tic-tac-toe is a game in which two players take turns in drawing either an ` O' or an ` X' in one square of a grid consisting of nine squares. The winner is the first player to get three of the same symbols in a row.</p>
+            <button style="background-color: blue;border: none;border-radius: 5px;"><a href="https://siddharth-1301.github.io/PRODIGY_TASK/">Click Me</a></button>
+          </div>
+          </div>
+          </div>
+      </div>
+  </section>
+   
+     <section id="contact" style="display: flex;justify-content: center;align-items: center;">
+      
+      <ul>
+        <h1 style="text-align: center;color: white;">CONTACT US</h1>
+        <li>E-mail:abc@gmail.com</li>
+        <li>Phone No:75xxxxabc9</li>
+        <li><a href="https://www.linkedin.com/in/siddharth-prabhudesai-895709254/" style="text-decoration:none; color:white">LinkedIn </a><i class="fa-brands fa-linkedin"></i></li>
+      </ul>
+    <style>
+      #contact h1{
+        font-size: 70px;
+      }
+        #contact ul li{
+            color: white;
+            font-size: 50px;
+        }
+        #project a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @media(max-width:790px){
+          nav {
+            display: none;
+          }
+          #contact ul h1{
+font-size: 30px;
+
+          }
+          .back p{
+            font-size: 10px;
+          }
+          .back button{
+            width: 90px;
+            padding: 5px;
+            height: 30px;
+           
+          }
+
+          .back a{
+            font-size: 10px;
+          }
+          #home{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+gap: 20px;
+align-items: center;
+padding: 6px;
+
+
+          }
+          .container1{
+            width:180px;
+            height:180px;
+          }
+          #about{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+          }
+          #about h1{
+            
+
+            font-size: 30px;
+          }
+          .photo{
+          bottom: 0;
+          transform: translateX(-50%);
+          left: 50%;
+          width:180px;
+          height: 180px;
+          border-radius: 50%;
+          }
+          .intro{
+            
+            width: 100%;
+            text-align: center;
+          }
+          .intro h1{
+            font-size: 20px;
+          }
+          #contact ul li{
+font-size: 25px;
+text-align: center;
+    }
+        }
+        .description{
+          
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        }
+      
+        .description p{
+          text-align: center;
+          font-size: 22px;
+        }
+    </style>
+    
+    </section>   
+     
+            
+        </div>
+   <script >
+    let section=document.querySelectorAll('section');
+  let navbar=  document.querySelectorAll('header nav a');
+  window.onscroll=()=>{
+section.forEach(sec =>{
+    let top=window.scrollY;
+    let offset = sec.offsetTop;
+    let height=sec.offsetHeight;
+    let id=sec.getAttribute('id');
+    if(top>=offset & top <offset+height){
+        navbar.forEach(links =>{
+            links.classList.remove('active');
+            document.querySelector('header nav a[href*='+id+']').classList.add('active');
+        })
+    }
+});
+  };
+  function changecolor(){
+    const homeSection=document.getElementById('home');
+    const projectSection=document.getElementById('project');
+    homeSection.style.backgroundColor='black';
+    projectSection.style.backgroundColor='black';
+    projectSection.style.color='white';
+    const phead=document.getElementById('projHead');
+    phead.style.color='white';
+    const projecCards=document.getElementsByClassName('front');
+    const backcards=document.getElementsByClassName('back');
+    for (let i = 0; i < projecCards.length; i++) {
+      projecCards[i].style.boxShadow = '0 2px 33px grey';
+    }
+    for (let i = 0; i < backcards.length; i++) {
+      backcards[i].style.boxShadow = '0 2px 33px grey';
+    }
+  } 
+  
+  </script>
+</body>
+</html>
